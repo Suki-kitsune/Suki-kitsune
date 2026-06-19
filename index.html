@@ -5,24 +5,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>🦊 Welcome To Suki Kitsune 🦊</title>
+<title>🌸 Welcome To Suki Kitsune 🌸</title>
 
 <link rel="icon" type="image/jpeg" href="wuwaXfox.jpg">
 
 <meta name="description" content="Welcome To Suki Kitsune - A dreamy fox world filled with cherry blossoms, pink skies, magical petals and kawaii aesthetics.">
 
-<meta property="og:title" content="🦊 Welcome To Suki Kitsune 🦊">
+<meta property="og:title" content="🌸 Welcome To Suki Kitsune 🌸">
 <meta property="og:description" content="A soft pink fox world inspired by cherry blossoms and dreamy kawaii aesthetics.">
 <meta property="og:image" content="YOUR_GITHUB_URL/wuwaXfox.jpg">
 <meta property="og:url" content="YOUR_GITHUB_URL">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="🦊 Welcome To Suki Kitsune 🦊">
+<meta name="twitter:title" content="🌸 Welcome To Suki Kitsune 🌸">
 <meta name="twitter:description" content="A dreamy fox world with pink skies, cherry blossoms and magical moments.">
 <meta name="twitter:image" content="YOUR_GITHUB_URL/wuwaXfox.jpg">
 
 <style>
+
 html{
     scroll-behavior:smooth;
 }
@@ -38,6 +39,8 @@ body{
     background:linear-gradient(to bottom,#ffe6f2,#ffcce6);
     overflow-x:hidden;
 }
+
+/* Navigation */
 
 nav{
     position:fixed;
@@ -67,6 +70,8 @@ nav a:hover{
     transform:translateY(-3px);
 }
 
+/* Sections */
+
 section{
     min-height:100vh;
     display:flex;
@@ -86,14 +91,12 @@ section{
     box-shadow:0 0 30px rgba(255,105,180,.25);
 }
 
-.card h1,
-.box h2{
+.card h1{
     color:#ff4da6;
     margin-bottom:15px;
 }
 
-.card p,
-.box p{
+.card p{
     color:#666;
     line-height:1.8;
 }
@@ -115,6 +118,18 @@ section{
     box-shadow:0 0 25px rgba(255,105,180,.2);
 }
 
+.box h2{
+    color:#ff4da6;
+    margin-bottom:15px;
+}
+
+.box p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* Gallery */
+
 .gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -134,6 +149,8 @@ section{
 .gallery img:hover{
     transform:scale(1.05);
 }
+
+/* Social Buttons */
 
 .socials{
     margin-top:25px;
@@ -158,6 +175,8 @@ section{
     transform:translateY(-3px);
 }
 
+/* Falling Petals */
+
 .petal{
     position:fixed;
     top:-50px;
@@ -167,8 +186,9 @@ section{
 }
 
 @keyframes fall{
+
 0%{
-transform:translateY(-50px) translateX(0) rotate(0deg);
+transform:translateY(-50px) translateX(0px) rotate(0deg);
 }
 
 50%{
@@ -178,7 +198,10 @@ transform:translateY(50vh) translateX(40px) rotate(180deg);
 100%{
 transform:translateY(110vh) translateX(-40px) rotate(360deg);
 }
+
 }
+
+/* Mobile */
 
 @media(max-width:600px){
 
@@ -215,8 +238,11 @@ nav a{
 .gallery img{
     height:220px;
 }
+
 }
+
 </style>
+
 </head>
 
 <body>
@@ -229,8 +255,10 @@ nav a{
 </nav>
 
 <section id="home">
+
 <div class="card">
-<h1>🦊 Welcome To Suki Kitsune 🦊</h1>
+
+<h1>🌸 Welcome To Suki Kitsune 🌸</h1>
 
 <p>
 A dreamy fox world filled with cherry blossoms,
@@ -238,10 +266,13 @@ pink skies, magical petals and cozy kitsune vibes.
 </p>
 
 <div class="fox">🦊</div>
+
 </div>
+
 </section>
 
 <section id="gallery">
+
 <div class="box">
 
 <h2>🌸 Gallery 🌸</h2>
@@ -261,10 +292,13 @@ A collection of beautiful memories and magical moments.
 </div>
 
 </div>
+
 </section>
 
 <section id="about">
+
 <div class="box">
+
 <h2>💖 About</h2>
 
 <p>
@@ -273,9 +307,11 @@ by fox spirits, cherry blossoms and dreamy kawaii aesthetics.
 </p>
 
 </div>
+
 </section>
 
 <section id="contact">
+
 <div class="box">
 
 <h2>📩 Connect With Me</h2>
@@ -301,6 +337,7 @@ Follow me on my social media platforms.
 </div>
 
 </div>
+
 </section>
 
 <script>
