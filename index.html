@@ -1,32 +1,28 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>🌸 Sakura Paradise 🌸</title>
+<title>🦊 Welcome To Suki Kitsune 🦊</title>
 
-<!-- Website Icon -->
 <link rel="icon" type="image/jpeg" href="wuwaXfox.jpg">
 
-<!-- Google Search Description -->
-<meta name="description" content="Sakura Paradise - A dreamy cherry blossom world filled with pink skies, magical petals, cozy fox vibes and kawaii aesthetics.">
+<meta name="description" content="Welcome To Suki Kitsune - A dreamy fox world filled with cherry blossoms, pink skies, magical petals and kawaii aesthetics.">
 
-<!-- Social Media Preview -->
-<meta property="og:title" content="🌸 Sakura Paradise 🌸">
-<meta property="og:description" content="A soft pink world inspired by cherry blossoms, foxes and dreamy kawaii aesthetics.">
+<meta property="og:title" content="🦊 Welcome To Suki Kitsune 🦊">
+<meta property="og:description" content="A soft pink fox world inspired by cherry blossoms and dreamy kawaii aesthetics.">
 <meta property="og:image" content="YOUR_GITHUB_URL/wuwaXfox.jpg">
 <meta property="og:url" content="YOUR_GITHUB_URL">
 <meta property="og:type" content="website">
 
-<!-- Twitter / X Preview -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="🌸 Sakura Paradise 🌸">
-<meta name="twitter:description" content="A dreamy cherry blossom world with pink skies and magical moments.">
+<meta name="twitter:title" content="🦊 Welcome To Suki Kitsune 🦊">
+<meta name="twitter:description" content="A dreamy fox world with pink skies, cherry blossoms and magical moments.">
 <meta name="twitter:image" content="YOUR_GITHUB_URL/wuwaXfox.jpg">
 
 <style>
-
 html{
     scroll-behavior:smooth;
 }
@@ -35,15 +31,13 @@ html{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
     background:linear-gradient(to bottom,#ffe6f2,#ffcce6);
     overflow-x:hidden;
 }
-
-/* Navigation */
 
 nav{
     position:fixed;
@@ -73,8 +67,6 @@ nav a:hover{
     transform:translateY(-3px);
 }
 
-/* Sections */
-
 section{
     min-height:100vh;
     display:flex;
@@ -94,12 +86,14 @@ section{
     box-shadow:0 0 30px rgba(255,105,180,.25);
 }
 
-.card h1{
+.card h1,
+.box h2{
     color:#ff4da6;
     margin-bottom:15px;
 }
 
-.card p{
+.card p,
+.box p{
     color:#666;
     line-height:1.8;
 }
@@ -121,18 +115,6 @@ section{
     box-shadow:0 0 25px rgba(255,105,180,.2);
 }
 
-.box h2{
-    color:#ff4da6;
-    margin-bottom:15px;
-}
-
-.box p{
-    color:#666;
-    line-height:1.8;
-}
-
-/* Gallery */
-
 .gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -152,8 +134,6 @@ section{
 .gallery img:hover{
     transform:scale(1.05);
 }
-
-/* Social Buttons */
 
 .socials{
     margin-top:25px;
@@ -178,8 +158,6 @@ section{
     transform:translateY(-3px);
 }
 
-/* Falling Petals */
-
 .petal{
     position:fixed;
     top:-50px;
@@ -189,9 +167,8 @@ section{
 }
 
 @keyframes fall{
-
 0%{
-transform:translateY(-50px) translateX(0px) rotate(0deg);
+transform:translateY(-50px) translateX(0) rotate(0deg);
 }
 
 50%{
@@ -201,49 +178,44 @@ transform:translateY(50vh) translateX(40px) rotate(180deg);
 100%{
 transform:translateY(110vh) translateX(-40px) rotate(360deg);
 }
-
 }
-
-/* Mobile */
 
 @media(max-width:600px){
 
 nav{
-flex-wrap:wrap;
-gap:10px;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 nav a{
-padding:10px 16px;
-font-size:14px;
+    padding:10px 16px;
+    font-size:14px;
 }
 
 .card,.box{
-padding:25px;
+    padding:25px;
 }
 
 .card h1{
-font-size:28px;
+    font-size:28px;
 }
 
 .fox{
-font-size:28px;
+    font-size:28px;
 }
 
 .socials{
-flex-direction:column;
+    flex-direction:column;
 }
 
 .gallery{
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
 }
 
 .gallery img{
-height:220px;
+    height:220px;
 }
-
 }
-
 </style>
 </head>
 
@@ -257,24 +229,19 @@ height:220px;
 </nav>
 
 <section id="home">
-
 <div class="card">
-
-<h1>🌸 Welcome to Sakura Paradise 🌸</h1>
+<h1>🦊 Welcome To Suki Kitsune 🦊</h1>
 
 <p>
-A dreamy cherry blossom world filled with pink skies,
-magical petals and cozy fox vibes.
+A dreamy fox world filled with cherry blossoms,
+pink skies, magical petals and cozy kitsune vibes.
 </p>
 
 <div class="fox">🦊</div>
-
 </div>
-
 </section>
 
 <section id="gallery">
-
 <div class="box">
 
 <h2>🌸 Gallery 🌸</h2>
@@ -284,7 +251,6 @@ A collection of beautiful memories and magical moments.
 </p>
 
 <div class="gallery">
-
 <img src="Sumi1.jpg" alt="Sumi 1">
 <img src="Sumi2.jpg" alt="Sumi 2">
 <img src="Sumi3.jpg" alt="Sumi 3">
@@ -292,30 +258,24 @@ A collection of beautiful memories and magical moments.
 <img src="Sumi5.jpg" alt="Sumi 5">
 <img src="Sumi6.jpg" alt="Sumi 6">
 <img src="Sumi7.jpg" alt="Sumi 7">
-
 </div>
 
 </div>
-
 </section>
 
 <section id="about">
-
 <div class="box">
-
 <h2>💖 About</h2>
 
 <p>
-Welcome to Sakura Paradise, a soft pink world inspired
-by cherry blossoms, foxes and dreamy kawaii aesthetics.
+Welcome to Suki Kitsune, a magical pink world inspired
+by fox spirits, cherry blossoms and dreamy kawaii aesthetics.
 </p>
 
 </div>
-
 </section>
 
 <section id="contact">
-
 <div class="box">
 
 <h2>📩 Connect With Me</h2>
@@ -341,7 +301,6 @@ Follow me on my social media platforms.
 </div>
 
 </div>
-
 </section>
 
 <script>
@@ -365,3 +324,4 @@ document.body.appendChild(petal);
 
 </body>
 </html>
+```
