@@ -38,13 +38,10 @@ html{
     font-family:Arial, sans-serif;
 }
 
-/* NEW BACKGROUND USING border.jpg */
+/* Pink dreamy background is back */
 
 body{
-    background-image:url("border.jpg");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
+    background:linear-gradient(to bottom,#ffe6f2,#ffcce6);
     overflow-x:hidden;
 }
 
@@ -65,16 +62,16 @@ nav{
 nav a{
     text-decoration:none;
     color:white;
-    background:rgba(255, 143, 199, 0.85);
+    background:rgba(255,143,199,.9);
     padding:12px 24px;
     border-radius:999px;
     font-weight:bold;
     transition:.3s;
-    box-shadow:0 4px 12px rgba(0,0,0,.25);
+    box-shadow:0 4px 12px rgba(255,105,180,.3);
 }
 
 nav a:hover{
-    background:rgba(255,115,184,.95);
+    background:#ff73b8;
     transform:translateY(-3px);
 }
 
@@ -88,18 +85,18 @@ section{
     padding:120px 20px;
 }
 
-/* Glass cards */
+/* Glass Cards */
 
 .card{
     position:relative;
     width:550px;
     max-width:90%;
-    background:rgba(255,255,255,.85);
+    background:rgba(255,255,255,.88);
     border-radius:35px;
     padding:45px;
     text-align:center;
     backdrop-filter:blur(10px);
-    box-shadow:0 0 35px rgba(0,0,0,.25);
+    box-shadow:0 0 30px rgba(255,105,180,.25);
 }
 
 .card h1{
@@ -108,10 +105,9 @@ section{
 }
 
 .card p{
-    color:#555;
+    color:#666;
     line-height:1.8;
 }
-
 
 .fox{
     position:absolute;
@@ -123,12 +119,12 @@ section{
 .box{
     width:900px;
     max-width:90%;
-    background:rgba(255,255,255,.85);
-    border-radius:30px;
+    background:rgba(255,255,255,.88);
     padding:40px;
+    border-radius:30px;
     text-align:center;
     backdrop-filter:blur(10px);
-    box-shadow:0 0 30px rgba(0,0,0,.25);
+    box-shadow:0 0 25px rgba(255,105,180,.2);
 }
 
 .box h2{
@@ -137,7 +133,7 @@ section{
 }
 
 .box p{
-    color:#555;
+    color:#666;
     line-height:1.8;
 }
 
@@ -155,14 +151,15 @@ section{
     height:250px;
     object-fit:cover;
     border-radius:20px;
-    box-shadow:0 4px 15px rgba(0,0,0,.25);
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
     transition:.3s;
 }
 
 .gallery img:hover{
     transform:scale(1.05);
 }
-    /* Social Buttons */
+
+/* Social Buttons */
 
 .socials{
     margin-top:25px;
@@ -175,16 +172,15 @@ section{
 .socials a{
     text-decoration:none;
     color:white;
-    background:rgba(255,143,199,.85);
+    background:#ff8fc7;
     padding:12px 20px;
     border-radius:999px;
     transition:.3s;
     font-weight:bold;
-    box-shadow:0 4px 12px rgba(0,0,0,.25);
 }
 
 .socials a:hover{
-    background:rgba(255,115,184,.95);
+    background:#ff73b8;
     transform:translateY(-3px);
 }
 
@@ -255,7 +251,6 @@ height:220px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -362,21 +357,21 @@ Follow me on my social media platforms.
 
 <script>
 
-/* Create Falling Sakura Petals */
+/* Create falling sakura petals */
 
-for(let i=0; i<25; i++){
+for(let i=0;i<25;i++){
 
-let petal = document.createElement("div");
+let petal=document.createElement("div");
 
-petal.className = "petal";
+petal.className="petal";
 
-petal.innerHTML = "🌸";
+petal.innerHTML="🌸";
 
-petal.style.left = Math.random()*100 + "vw";
+petal.style.left=Math.random()*100+"vw";
 
-petal.style.animationDuration = (6 + Math.random()*8) + "s";
+petal.style.animationDuration=(6+Math.random()*8)+"s";
 
-petal.style.animationDelay = Math.random()*5 + "s";
+petal.style.animationDelay=Math.random()*5+"s";
 
 document.body.appendChild(petal);
 
@@ -384,7 +379,5 @@ document.body.appendChild(petal);
 
 </script>
 
-
 </body>
-
 </html>
