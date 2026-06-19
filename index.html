@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,7 +93,7 @@ section{
 }
 
 .box{
-    width:700px;
+    width:900px;
     max-width:90%;
     background:rgba(255,255,255,.88);
     padding:40px;
@@ -109,6 +110,28 @@ section{
 .box p{
     color:#666;
     line-height:1.8;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
 }
 
 /* Social Buttons */
@@ -192,6 +215,14 @@ font-size:28px;
 flex-direction:column;
 }
 
+.gallery{
+grid-template-columns:1fr;
+}
+
+.gallery img{
+height:220px;
+}
+
 }
 
 </style>
@@ -248,6 +279,7 @@ A collection of beautiful memories and magical moments.
 </div>
 
 </section>
+
 <section id="about">
 
 <div class="box">
@@ -295,12 +327,11 @@ Follow me on my social media platforms.
 
 <script>
 
-for(let i=0;i<60;i++){
+for(let i=0;i<25;i++){
 
 let petal=document.createElement("div");
 
 petal.className="petal";
-
 petal.innerHTML="🌸";
 
 petal.style.left=Math.random()*100+"vw";
@@ -315,3 +346,4 @@ document.body.appendChild(petal);
 
 </body>
 </html>
+```
