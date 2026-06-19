@@ -6,24 +6,24 @@
 
 <title>🌸 Sakura Paradise 🌸</title>
 
-<!-- Website Icon (Browser Tab) -->
-<link rel="icon" type="image/jpeg" href="preview.jpg">
+<!-- Website Icon -->
+<link rel="icon" type="image/png" href="whitekitsune.png">
 
-<!-- Google Search Description -->
-<meta name="description" content="Suki kitsune - A dreamy cherry blossom world filled with pink skies, magical petals, cozy fox vibes and kawaii aesthetics.">
+<!-- SEO Description -->
+<meta name="description" content="Sakura Paradise - A dreamy cherry blossom world filled with pink skies, magical petals, cozy fox vibes and kawaii aesthetics.">
 
 <!-- Social Media Preview -->
-<meta property="og:title" content="🌸 Suki kitsune 🌸">
+<meta property="og:title" content="🌸 Sakura Paradise 🌸">
 <meta property="og:description" content="A soft pink world inspired by cherry blossoms, foxes and dreamy kawaii aesthetics.">
-<meta property="og:image" content="YOUR_GITHUB_URL/preview.jpg">
+<meta property="og:image" content="YOUR_GITHUB_URL/whitekitsune.png">
 <meta property="og:url" content="YOUR_GITHUB_URL">
 <meta property="og:type" content="website">
 
-<!-- Twitter/X Preview -->
+<!-- Twitter / X Preview -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="🌸 Sakura Paradise 🌸">
 <meta name="twitter:description" content="A dreamy cherry blossom world with pink skies and magical moments.">
-<meta name="twitter:image" content="YOUR_GITHUB_URL/preview.jpg">
+<meta name="twitter:image" content="YOUR_GITHUB_URL/whitekitsune.png">
 
 <style>
 
@@ -35,7 +35,7 @@ html{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
@@ -178,7 +178,7 @@ section{
     transform:translateY(-3px);
 }
 
-/* Falling Petals */
+/* Falling Sakura Petals */
 
 .petal{
     position:fixed;
@@ -191,15 +191,15 @@ section{
 @keyframes fall{
 
 0%{
-transform:translateY(-50px) translateX(0px) rotate(0deg);
+    transform:translateY(-50px) translateX(0px) rotate(0deg);
 }
 
 50%{
-transform:translateY(50vh) translateX(40px) rotate(180deg);
+    transform:translateY(50vh) translateX(40px) rotate(180deg);
 }
 
 100%{
-transform:translateY(110vh) translateX(-40px) rotate(360deg);
+    transform:translateY(110vh) translateX(-40px) rotate(360deg);
 }
 
 }
@@ -209,37 +209,37 @@ transform:translateY(110vh) translateX(-40px) rotate(360deg);
 @media(max-width:600px){
 
 nav{
-flex-wrap:wrap;
-gap:10px;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 nav a{
-padding:10px 16px;
-font-size:14px;
+    padding:10px 16px;
+    font-size:14px;
 }
 
 .card,.box{
-padding:25px;
+    padding:25px;
 }
 
 .card h1{
-font-size:28px;
+    font-size:28px;
 }
 
 .fox{
-font-size:28px;
+    font-size:28px;
 }
 
 .socials{
-flex-direction:column;
+    flex-direction:column;
 }
 
 .gallery{
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
 }
 
 .gallery img{
-height:220px;
+    height:220px;
 }
 
 }
@@ -255,6 +255,7 @@ height:220px;
     <a href="#about">💖 About</a>
     <a href="#contact">📩 Contact</a>
 </nav>
+
 
 <section id="home">
 
@@ -272,6 +273,7 @@ magical petals and cozy fox vibes.
 </div>
 
 </section>
+
 
 <section id="gallery">
 
@@ -299,6 +301,7 @@ A collection of beautiful memories and magical moments.
 
 </section>
 
+
 <section id="about">
 
 <div class="box">
@@ -313,6 +316,7 @@ by cherry blossoms, foxes and dreamy kawaii aesthetics.
 </div>
 
 </section>
+
 
 <section id="contact">
 
@@ -344,18 +348,24 @@ Follow me on my social media platforms.
 
 </section>
 
+
 <script>
+
+/* Create falling sakura petals */
 
 for(let i=0;i<25;i++){
 
 let petal=document.createElement("div");
 
 petal.className="petal";
+
 petal.innerHTML="🌸";
 
-petal.style.left=Math.random()*100+"vw";
-petal.style.animationDuration=(6+Math.random()*8)+"s";
-petal.style.animationDelay=Math.random()*5+"s";
+petal.style.left=Math.random()*100 + "vw";
+
+petal.style.animationDuration=(6 + Math.random()*8) + "s";
+
+petal.style.animationDelay=Math.random()*5 + "s";
 
 document.body.appendChild(petal);
 
