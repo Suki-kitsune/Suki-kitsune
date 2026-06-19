@@ -4,25 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>🌸 Suki kitsune 🌸</title>
+<title>🌸 Suki Kitsune 🌸</title>
 
 <!-- Website Icon -->
 <link rel="icon" type="image/jpeg" href="wuwaXfox.jpg">
 
 <!-- Google Search Description -->
-<meta name="description" content="Suki kitsune - A dreamy cherry blossom world filled with pink skies, magical petals, cozy fox vibes and kawaii aesthetics.">
+<meta name="description" content="Suki Kitsune - A dreamy fox world filled with magical petals, beautiful memories and kawaii aesthetics.">
 
 <!-- Social Media Preview -->
-<meta property="og:title" content="🌸 Suki kitsune 🌸">
-<meta property="og:description" content="A soft pink world inspired by cherry blossoms, foxes and dreamy kawaii aesthetics.">
+<meta property="og:title" content="🌸 Suki Kitsune 🌸">
+<meta property="og:description" content="A soft magical world inspired by foxes, cherry blossoms and dreamy kawaii aesthetics.">
 <meta property="og:image" content="YOUR_GITHUB_URL/wuwaXfox.jpg">
 <meta property="og:url" content="YOUR_GITHUB_URL">
 <meta property="og:type" content="website">
 
 <!-- Twitter / X Preview -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="🌸 Suki kitsune 🌸">
-<meta name="twitter:description" content="A dreamy cherry blossom world with pink skies and magical moments.">
+<meta name="twitter:title" content="🌸 Suki Kitsune 🌸">
+<meta name="twitter:description" content="A dreamy fox world with pink skies, sakura petals and magical moments.">
 <meta name="twitter:image" content="YOUR_GITHUB_URL/wuwaXfox.jpg">
 
 <style>
@@ -38,8 +38,13 @@ html{
     font-family:Arial, sans-serif;
 }
 
+/* NEW BACKGROUND USING border.jpg */
+
 body{
-    background:linear-gradient(to bottom,#ffe6f2,#ffcce6);
+    background-image:url("border.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
     overflow-x:hidden;
 }
 
@@ -60,16 +65,16 @@ nav{
 nav a{
     text-decoration:none;
     color:white;
-    background:#ff8fc7;
+    background:rgba(255, 143, 199, 0.85);
     padding:12px 24px;
     border-radius:999px;
     font-weight:bold;
     transition:.3s;
-    box-shadow:0 4px 12px rgba(255,105,180,.3);
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
 }
 
 nav a:hover{
-    background:#ff73b8;
+    background:rgba(255,115,184,.95);
     transform:translateY(-3px);
 }
 
@@ -83,15 +88,18 @@ section{
     padding:120px 20px;
 }
 
+/* Glass cards */
+
 .card{
     position:relative;
     width:550px;
     max-width:90%;
-    background:rgba(255,255,255,.88);
+    background:rgba(255,255,255,.85);
     border-radius:35px;
     padding:45px;
     text-align:center;
-    box-shadow:0 0 30px rgba(255,105,180,.25);
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 35px rgba(0,0,0,.25);
 }
 
 .card h1{
@@ -100,9 +108,10 @@ section{
 }
 
 .card p{
-    color:#666;
+    color:#555;
     line-height:1.8;
 }
+
 
 .fox{
     position:absolute;
@@ -114,11 +123,12 @@ section{
 .box{
     width:900px;
     max-width:90%;
-    background:rgba(255,255,255,.88);
-    padding:40px;
+    background:rgba(255,255,255,.85);
     border-radius:30px;
+    padding:40px;
     text-align:center;
-    box-shadow:0 0 25px rgba(255,105,180,.2);
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 30px rgba(0,0,0,.25);
 }
 
 .box h2{
@@ -127,7 +137,7 @@ section{
 }
 
 .box p{
-    color:#666;
+    color:#555;
     line-height:1.8;
 }
 
@@ -145,15 +155,14 @@ section{
     height:250px;
     object-fit:cover;
     border-radius:20px;
-    box-shadow:0 4px 15px rgba(0,0,0,.15);
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
     transition:.3s;
 }
 
 .gallery img:hover{
     transform:scale(1.05);
 }
-
-/* Social Buttons */
+    /* Social Buttons */
 
 .socials{
     margin-top:25px;
@@ -166,15 +175,16 @@ section{
 .socials a{
     text-decoration:none;
     color:white;
-    background:#ff8fc7;
+    background:rgba(255,143,199,.85);
     padding:12px 20px;
     border-radius:999px;
     transition:.3s;
     font-weight:bold;
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
 }
 
 .socials a:hover{
-    background:#ff73b8;
+    background:rgba(255,115,184,.95);
     transform:translateY(-3px);
 }
 
@@ -245,6 +255,7 @@ height:220px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -256,6 +267,7 @@ height:220px;
     <a href="#contact">📩 Contact</a>
 </nav>
 
+
 <section id="home">
 
 <div class="card">
@@ -263,8 +275,8 @@ height:220px;
 <h1>🌸 Welcome To Suki Kitsune 🌸</h1>
 
 <p>
-A dreamy cherry blossom world filled with pink skies,
-magical petals and cozy fox vibes.
+A dreamy fox world filled with magical petals,
+beautiful memories and cozy kitsune vibes.
 </p>
 
 <div class="fox">🦊</div>
@@ -272,6 +284,7 @@ magical petals and cozy fox vibes.
 </div>
 
 </section>
+
 
 <section id="gallery">
 
@@ -299,6 +312,7 @@ A collection of beautiful memories and magical moments.
 
 </section>
 
+
 <section id="about">
 
 <div class="box">
@@ -306,13 +320,14 @@ A collection of beautiful memories and magical moments.
 <h2>💖 About</h2>
 
 <p>
-Welcome To Suki kitsune, a soft pink world inspired
-by cherry blossoms, foxes and dreamy kawaii aesthetics.
+Welcome to Suki Kitsune, a magical world inspired by
+foxes, cherry blossoms and dreamy kawaii aesthetics.
 </p>
 
 </div>
 
 </section>
+
 
 <section id="contact">
 
@@ -344,18 +359,24 @@ Follow me on my social media platforms.
 
 </section>
 
+
 <script>
 
-for(let i=0;i<25;i++){
+/* Create Falling Sakura Petals */
 
-let petal=document.createElement("div");
+for(let i=0; i<25; i++){
 
-petal.className="petal";
-petal.innerHTML="🌸";
+let petal = document.createElement("div");
 
-petal.style.left=Math.random()*100+"vw";
-petal.style.animationDuration=(6+Math.random()*8)+"s";
-petal.style.animationDelay=Math.random()*5+"s";
+petal.className = "petal";
+
+petal.innerHTML = "🌸";
+
+petal.style.left = Math.random()*100 + "vw";
+
+petal.style.animationDuration = (6 + Math.random()*8) + "s";
+
+petal.style.animationDelay = Math.random()*5 + "s";
 
 document.body.appendChild(petal);
 
@@ -363,5 +384,7 @@ document.body.appendChild(petal);
 
 </script>
 
+
 </body>
+
 </html>
